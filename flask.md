@@ -51,6 +51,7 @@
         app.run(debug=True)
 
 5. Запусти приложение: flask run (или python app.py) и открой в браузере http://127.0.0.1:5000.
+
 ✅ Чек-поинт: Коммит feat: init flask app with dotenv and basic route.
 
 ⏱️ Час 2: SQLAlchemy и миграция с JSON на SQLite
@@ -106,6 +107,7 @@
         db.create_all()
     print("Таблицы созданы!")
     exit()
+	
 ✅ Чек-поинт: Коммит feat: add sqlalchemy models and sqlite configuration. Убедись, что файл journal.db (или папка instance/) добавлен в .gitignore.
 
 ⏱️ Час 3: Формы и безопасность (Flask-WTF)
@@ -185,6 +187,7 @@
             return redirect(url_for('add_grade'))
         
         return render_template('add_grade.html', form=form)
+    
 ✅ Чек-поинт: Коммит feat: add wtf form for grade entry with csrf and validation. Протестируй отправку пустой формы и формы с баллом "150" (должна появиться ошибка).
 
 ⏱️ Час 4: Аутентификация и сессии (Flask-Login)
@@ -234,6 +237,7 @@
     def add_grade():
         # ... логика остается той же
         # В шаблон теперь можно передать current_user.username
+    
 ✅ Чек-поинт: Коммит feat: implement user registration, login and protected routes.
 
 🛡️ Финальный чек-лист перед Pull Request
