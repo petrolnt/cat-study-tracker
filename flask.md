@@ -101,6 +101,7 @@
 
     ```bash
     python
+    
 И выполни там:
 
     ```python
