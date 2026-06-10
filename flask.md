@@ -98,9 +98,11 @@
         notes = db.Column(db.Text)
 
 4. Создай таблицы в БД. Для этого открой интерактивную консоль Python в терминале:
+
     ```bash
     python
 И выполни там:
+
     ```python
     from app import app, db
     with app.app_context():
